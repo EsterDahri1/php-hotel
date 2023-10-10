@@ -64,10 +64,9 @@ $hotels = [
             <tbody>
                 <?php foreach ($hotels as $hotel) : ?>
                     <tr>
-                        <th></th>
-                        <td><?php echo $hotel['name'] ?></td>
+                        <th scope="row"><?php echo $hotel['name'] ?></th>
                         <td><?php echo $hotel['description'] ?></td>
-                        <td><?php echo $hotel['parking'] ?></td>
+                        <td><?php echo ($hotel['parking']) ? '✔️' : '✖️' ?></td>
                         <td><?php echo $hotel['vote'] ?> stars</td>
                         <td><?php echo $hotel['distance_to_center'] ?> km</td>
                     </tr>
