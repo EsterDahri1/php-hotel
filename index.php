@@ -54,15 +54,27 @@ $hotels = [
 </head>
 
 <body>
-    <ul>
-        <?php foreach ($hotels as $hotel) : ?>
-            <li><?php echo $hotel['name'] ?></li>
-            <li><?php echo $hotel['description'] ?></li>
-            <li><?php echo $hotel['parking'] ?></li>
-            <li><?php echo $hotel['vote'] ?> stars</li>
-            <li><?php echo $hotel['distance_to_center'] ?> km</li>
-        <?php endforeach; ?>
-    </ul>
+
+    <div class="container">
+        <table class="mt-5 table table-hover table-bordered">
+            <caption></caption>
+            <thead>
+
+            </thead>
+            <tbody>
+                <?php foreach ($hotels as $hotel) : ?>
+                    <tr>
+                        <th></th>
+                        <td><?php echo $hotel['name'] ?></td>
+                        <td><?php echo $hotel['description'] ?></td>
+                        <td><?php echo $hotel['parking'] ?></td>
+                        <td><?php echo $hotel['vote'] ?> stars</td>
+                        <td><?php echo $hotel['distance_to_center'] ?> km</td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
