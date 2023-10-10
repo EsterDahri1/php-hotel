@@ -62,7 +62,13 @@ $hotels = [
         <table class="mt-5 table table-hover table-bordered">
             <caption></caption>
             <thead>
-
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Descrizione</th>
+                    <th scope="col">Parcheggio</th>
+                    <th scope="col">Voto</th>
+                    <th scope="col">Distanza dal centro</th>
+                </tr>
             </thead>
             <tbody>
                 <?php foreach ($hotels as $hotel) : ?>
