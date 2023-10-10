@@ -53,9 +53,12 @@ $hotels = [
 
 </head>
 
-<body>
+<body class="bg-info bg-opacity-25">
 
     <div class="container">
+        <div class="mt-3 bg-info border-1 rounded-1 shadow-sm">
+            <h1 class="p-3 text-white text-center">List of hotels you can stay in</h1>
+        </div>
         <table class="mt-5 table table-hover table-bordered">
             <caption></caption>
             <thead>
